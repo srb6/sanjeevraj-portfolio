@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://srb6.github.io/sanjeevraj-portfolio/sitemap.xml
