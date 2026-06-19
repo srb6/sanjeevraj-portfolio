@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjeevraj Bommannan M | Electronics & Communication Engineer (VLSI / Embedded)</title>
+    <meta name="description" content="Professional Portfolio of Sanjeevraj Bommannan M, an Electronics and Communication Engineering undergraduate specializing in VLSI Design, Digital Systems, and Embedded Systems.">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Outfit and Fira Code for technical segments -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Canvas for Circuit Effect -->
+    <canvas id="circuit-canvas"></canvas>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">&lt;SR/&gt;</span>
+                <span class="logo-text">Sanjeevraj</span>
+            </a>
+            
+            <nav class="navbar" id="navbar">
+                <a href="#about" class="nav-link active">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link nav-btn">Get In Touch</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark/light theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="badge">
+                        <span class="badge-dot"></span>
+                        Seeking VLSI Design / Design Verification Roles
+                    </div>
+                    <h1 class="hero-title">Sanjeevraj <span class="highlight">Bommannan M</span></h1>
+                    <h2 class="hero-subtitle">
+                        Electronics &amp; Communication Engineer 
+                    </h2>
+                    <p class="hero-desc">
+                        Undergraduate specialized in <strong>VLSI Design</strong>, <strong>Digital Electronics</strong>, and <strong>Embedded Systems</strong>. Passionate about designing reliable, high-performance semiconductor solutions, writing HDL code (Verilog/SystemVerilog), and developing integrated IoT applications.
+                    </p>
+                    
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>Explore Projects</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">Contact Info</a>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="mailto:sanjeevrajbm2006@gmail.com" target="_blank" aria-label="Email Address"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://linkedin.com/in/bomman" target="_blank" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/srb6" target="_blank" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+                        <a href="tel:+917708044151" aria-label="Phone Number"><i class="fa-solid fa-phone"></i></a>
+                    </div>
+                </div>
+
+                <div class="hero-image-area">
+                    <div class="profile-frame">
+                        <div class="circuit-connector top-left"></div>
+                        <div class="circuit-connector top-right"></div>
+                        <div class="circuit-connector bottom-left"></div>
+                        <div class="circuit-connector bottom-right"></div>
+                        
+                        <div class="image-wrapper">
+                            <!-- Falling back to Photo.jpg if coat_photo.png fails, but coat_photo.png is preferred -->
+                            <img src="coat_photo.png" alt="Sanjeevraj Bommannan M" id="profile-image" onerror="this.src='Photo.jpg'">
+                            <div class="image-overlay"></div>
+                        </div>
+
+                        <!-- Semiconductor chip pin representations for visual aesthetic -->
+                        <div class="chip-pins right">
+                            <span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                        <div class="chip-pins left">
+                            <span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="#about" class="scroll-indicator" aria-label="Scroll down to About section">
+                <span class="mouse-icon">
+                    <span class="wheel"></span>
+                </span>
+                <span class="scroll-text">Scroll Down</span>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section section" id="about">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Bridging software efficiency with hardware performance</p>
+                    <div class="title-line"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text-content">
+                        <p>
+                            I am a detail-oriented Electronics &amp; Communication Engineering undergraduate at <strong>Kongu Engineering College</strong>. My technical journey is centered around understanding core hardware architectures and implementing hardware descriptions to solve complex real-world problems.
+                        </p>
+                        <p>
+                            With solid fundamentals in <strong>VLSI Design</strong>, digital circuit synthesis, and verification processes, I enjoy working at the intersection of microcontrollers, sensor integration, and high-speed communications. I focus on developing clean, well-documented HDL modules (Verilog/VHDL) and verifying designs using simulator suites.
+                        </p>
+                        
+                        <div class="quick-stats">
+                            <div class="stat-card">
+                                <span class="stat-number">8.82</span>
+                                <span class="stat-label">B.E. CGPA</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">3+</span>
+                                <span class="stat-label">Core Projects</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">3</span>
+                                <span class="stat-label">Hackathon Wins</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-focus-cards">
+                        <div class="focus-card">
+                            <div class="focus-icon">
+                                <i class="fa-solid fa-microchip"></i>
+                            </div>
+                            <h3>VLSI Design</h3>
+                            <p>RTL code generation using Verilog, testbench scripting, logical synthesis, and verification methodologies.</p>
+                        </div>
+                        
+                        <div class="focus-card">
+                            <div class="focus-icon">
+                                <i class="fa-solid fa-gauge-high"></i>
+                            </div>
+                            <h3>Digital Systems</h3>
+                            <p>Analyzing and modeling combinational and sequential logic circuits for optimal gate-level efficiency.</p>
+                        </div>
+
+                        <div class="focus-card">
+                            <div class="focus-icon">
+                                <i class="fa-solid fa-network-wired"></i>
+                            </div>
+                            <h3>Embedded IoT</h3>
+                            <p>Firmware programming for ESP32/Arduino architectures integrated with sensor rigs and cloud backends.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section section" id="skills">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">Technical Skillset</h2>
+                    <p class="section-subtitle">Languages, processors, and industry-standard design tools</p>
+                    <div class="title-line"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Category 1: Programming & HDLs -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-code"></i>
+                            <h3>Programming &amp; HDLs</h3>
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Verilog / SystemVerilog</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 85%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>VHDL</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 70%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>C / C++</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 80%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Python</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 75%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 2: EDA Tools & Simulation -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                            <h3>EDA Tools &amp; Simulation</h3>
+                        </div>
+                        <div class="tools-badges">
+                            <div class="tool-badge" data-desc="Used for physical synthesis and gate-level netlists">
+                                <span class="badge-icon"><i class="fa-solid fa-server"></i></span>
+                                <span class="badge-name">Cadence Genus</span>
+                            </div>
+                            <div class="tool-badge" data-desc="HDL simulator for digital design verification">
+                                <span class="badge-icon"><i class="fa-solid fa-play"></i></span>
+                                <span class="badge-name">QuestaSim</span>
+                            </div>
+                            <div class="tool-badge" data-desc="Verification and simulation tool for HDL designs">
+                                <span class="badge-icon"><i class="fa-solid fa-terminal"></i></span>
+                                <span class="badge-name">ModelSim</span>
+                            </div>
+                            <div class="tool-badge" data-desc="SPICE simulator for analog/mixed-signal circuit analysis">
+                                <span class="badge-icon"><i class="fa-solid fa-chart-line"></i></span>
+                                <span class="badge-name">LTSpice / PSpice</span>
+                            </div>
+                            <div class="tool-badge" data-desc="Schematic capture and PCB layout design tool">
+                                <span class="badge-icon"><i class="fa-solid fa-compass-drafting"></i></span>
+                                <span class="badge-name">Altium / Proteus</span>
+                            </div>
+                            <div class="tool-badge" data-desc="Numerical computing and signal processing environment">
+                                <span class="badge-icon"><i class="fa-solid fa-calculator"></i></span>
+                                <span class="badge-name">MATLAB</span>
+                            </div>
+                            <div class="tool-badge" data-desc="Primary IDE for writing firmware and scripts">
+                                <span class="badge-icon"><i class="fa-solid fa-laptop-code"></i></span>
+                                <span class="badge-name">VS Code</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 3: Hardware & Platforms -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-square-rss"></i>
+                            <h3>Hardware &amp; Environments</h3>
+                        </div>
+                        <div class="hardware-grid">
+                            <div class="hw-item">
+                                <div class="hw-icon"><i class="fa-solid fa-memory"></i></div>
+                                <div class="hw-info">
+                                    <h4>ESP32 &amp; Arduino</h4>
+                                    <p>Firmware, peripheral interfacing (I2C, SPI, UART), ADC/DAC conversion.</p>
+                                </div>
+                            </div>
+                            <div class="hw-item">
+                                <div class="hw-icon"><i class="fa-solid fa-microchip"></i></div>
+                                <div class="hw-info">
+                                    <h4>8051 Microcontroller</h4>
+                                    <p>Assembly level programming, register-level architecture understanding.</p>
+                                </div>
+                            </div>
+                            <div class="hw-item">
+                                <div class="hw-icon"><i class="fa-brands fa-linux"></i></div>
+                                <div class="hw-info">
+                                    <h4>Ubuntu Linux</h4>
+                                    <p>CLI usage, shell scripting, hosting synthesis toolchains.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section section" id="projects">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">Key Projects</h2>
+                    <p class="section-subtitle">Practical implementations demonstrating hardware and IoT competency</p>
+                    <div class="title-line"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon-wrapper">
+                                <i class="fa-solid fa-droplet"></i>
+                            </div>
+                            <div class="project-meta">
+                                <span class="project-tag">Embedded System</span>
+                                <span class="project-tag">TinyML</span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-card-title">Multi-Wavelength Optical Microplastic Detection System</h3>
+                            <p class="project-card-desc">
+                                Developed a novel embedded sensor assembly utilizing multi-wavelength LEDs (UV, Visible, Infrared) and photodiode arrays to identify microplastic contaminants in water reservoirs. 
+                            </p>
+                            <ul class="project-bullets">
+                                <li>Employed light scattering and absorption analysis to classify plastic presence.</li>
+                                <li>Implemented real-time signal conditioning algorithms and optimized a edge TinyML model to estimate concentration indices dynamically.</li>
+                            </ul>
+                        </div>
+                        <div class="project-footer">
+                            <span class="project-tech"><i class="fa-solid fa-cube"></i> Optical Physics, TinyML, Arduino</span>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon-wrapper">
+                                <i class="fa-solid fa-bolt"></i>
+                            </div>
+                            <div class="project-meta">
+                                <span class="project-tag">IoT</span>
+                                <span class="project-tag">Automation</span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-card-title">Smart Energy Monitoring System</h3>
+                            <p class="project-card-desc">
+                                Engineered a complete power monitoring and automation network configured with ESP32 nodes and current/voltage transduction rigs (ACS712).
+                            </p>
+                            <ul class="project-bullets">
+                                <li>Calculated root-mean-square calculations on-chip and output details to an onboard LCD and connected IoT cloud dashboard.</li>
+                                <li>Integrated active relays for safety control, power utilization trend graphics, dynamic EB billing estimations, and automated warning systems.</li>
+                            </ul>
+                        </div>
+                        <div class="project-footer">
+                            <span class="project-tech"><i class="fa-solid fa-cube"></i> ESP32, ACS712, Relays, Cloud Dashboard</span>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon-wrapper">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                            <div class="project-meta">
+                                <span class="project-tag">Sensors</span>
+                                <span class="project-tag">Mobile App</span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-card-title">Smart Shopping Trolley</h3>
+                            <p class="project-card-desc">
+                                Built an automated retail cart incorporating load-cell load measurements and real-time database synchronization to streamline supermarket checkouts.
+                            </p>
+                            <ul class="project-bullets">
+                                <li>Designed load-cell weight calibration triggers linked with an Android scanning client app to establish instantaneous checkout bills.</li>
+                                <li>Incorporated hardware checks to trigger anti-theft flags if database records and physical weights differed.</li>
+                            </ul>
+                        </div>
+                        <div class="project-footer">
+                            <span class="project-tech"><i class="fa-solid fa-cube"></i> Load Cell, Firebase, Android App, ESP32</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements & Education Section -->
+        <section class="experience-section section" id="experience">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">Education &amp; Honors</h2>
+                    <p class="section-subtitle">Academic milestones and competitive hackathon achievements</p>
+                    <div class="title-line"></div>
+                </div>
+
+                <div class="dual-timeline-grid">
+                    <!-- Left: Education -->
+                    <div class="timeline-column">
+                        <h3 class="column-title"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <span class="timeline-date">2024 - Present</span>
+                                <h4 class="timeline-item-title">B.E. Electronics &amp; Communication Engineering</h4>
+                                <h5 class="timeline-item-inst">Kongu Engineering College, Perundurai</h5>
+                                <div class="timeline-badge-c">CGPA: 8.82</div>
+                                <p class="timeline-desc">Specialized coursework in VLSI Design, Digital Circuits, Signals & Systems, Linear Integrated Circuits, and Embedded Systems.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-date">2010 - 2024</span>
+                                <h4 class="timeline-item-title">Higher Secondary Education</h4>
+                                <h5 class="timeline-item-inst">Sri Sarada Balamandir Boys Matric. Hr. Sec. School, Salem</h5>
+                                <div class="timeline-badge-c">Score: 83.83%</div>
+                                <p class="timeline-desc">Focused on Advanced Mathematics, Physics, Chemistry, and Computer Science.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Achievements -->
+                    <div class="timeline-column">
+                        <h3 class="column-title"><i class="fa-solid fa-trophy"></i> Achievements</h3>
+                        <div class="timeline">
+                            <div class="timeline-item achievement-item">
+                                <span class="timeline-date">Award</span>
+                                <h4 class="timeline-item-title">Ideathon – Second Place</h4>
+                                <p class="timeline-desc">Presented a structural solution evaluating optical sensory arrays to identify macro/micro pollutant densities, emphasizing design feasibility and societal merit.</p>
+                            </div>
+                            <div class="timeline-item achievement-item">
+                                <span class="timeline-date">Award</span>
+                                <h4 class="timeline-item-title">Techno Fest (PoC) – Top 3</h4>
+                                <p class="timeline-desc">Engineered and demonstrated a fully functional Proof of Concept (PoC) for the Smart Shopping Cart featuring live Firebase database linking and anti-theft sensors.</p>
+                            </div>
+                            <div class="timeline-item achievement-item">
+                                <span class="timeline-date">Award</span>
+                                <h4 class="timeline-item-title">30 Hours Hackathon – Second Place</h4>
+                                <p class="timeline-desc">Designed, assembled, and optimized a real-time IoT power-grid analysis board using microcontrollers and cloud analytics within a strict 30-hour development frame.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Contact Section -->
+        <section class="contact-section section" id="contact">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Have a question or looking to collaborate? Let's connect!</p>
+                    <div class="title-line"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info-cards">
+                        <!-- Card 1: Email -->
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <a href="mailto:sanjeevrajbm2006@gmail.com">sanjeevrajbm2006@gmail.com</a>
+                                <p>Typically responds within 24 hours</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 2: LinkedIn -->
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>LinkedIn</h3>
+                                <a href="https://linkedin.com/in/bomman" target="_blank">linkedin.com/in/bomman</a>
+                                <p>Let's grow our professional network</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 3: GitHub -->
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>GitHub</h3>
+                                <a href="https://github.com/srb6" target="_blank">github.com/srb6</a>
+                                <p>Check out my code repositories and scripts</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 4: Location -->
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Location</h3>
+                                <p>5/3, Chamundi Street, Gugai,<br>Salem – 636006, Tamil Nadu, India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-container">
+                        <form id="portfolio-contact-form" class="contact-form" onsubmit="event.preventDefault(); alert('Thank you for reaching out! Since this is a demo, your message is simulated successfully.'); this.reset();">
+                            <h3 class="form-title">Send a Direct Message</h3>
+                            
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" required placeholder="John Doe">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" required placeholder="john@example.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" required placeholder="Project Collaboration">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" rows="5" required placeholder="Hi Sanjeevraj, I would love to talk about a VLSI/Embedded systems project..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <span>Send Message</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-bottom">
+        <div class="footer-container">
+            <p>&copy; 2026 Sanjeevraj Bommannan M. All rights reserved.</p>
+            <p class="footer-credit">Designed &amp; Programmed with <i class="fa-solid fa-heart text-danger"></i> for VLSI &amp; Embedded Systems</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
