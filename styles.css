@@ -434,7 +434,7 @@ body.light-theme .header {
     border: 2px solid var(--border-color);
     box-shadow: var(--card-shadow);
     padding: 10px;
-    border-radius: var(--border-radius-lg);
+    border-radius: 0;
     transition: border-color var(--transition-smooth), transform var(--transition-smooth);
 }
 
@@ -448,7 +448,7 @@ body.light-theme .header {
     background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
     z-index: -1;
     opacity: 0.15;
-    border-radius: var(--border-radius-lg);
+    border-radius: 0;
     transition: opacity var(--transition-smooth);
 }
 
@@ -469,7 +469,7 @@ body.light-theme .header {
     height: 100%;
     overflow: hidden;
     background-color: var(--bg-tertiary);
-    border-radius: calc(var(--border-radius-lg) - 10px);
+    border-radius: 0;
 }
 
 #profile-image {
