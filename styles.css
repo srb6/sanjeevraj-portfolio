@@ -267,6 +267,37 @@ body.dark .menu-toggle {
   transform: translateY(-2px);
 }
 
+/* Quick Links */
+.quick-links-section {
+  padding-top: 20px;
+}
+
+.quick-links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.quick-link-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 20px;
+  border-radius: 16px;
+  font-weight: 600;
+  background: var(--card);
+  color: var(--text);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quick-link-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 26px rgba(0,0,0,0.14);
+}
+
 /* About */
 .about-grid {
   display: grid;
@@ -638,7 +669,8 @@ body.dark .footer-bottom {
   .achievement-grid,
   .skills-grid,
   .about-grid,
-  .contact-grid {
+  .contact-grid,
+  .quick-links-grid {
     grid-template-columns: 1fr;
   }
 
