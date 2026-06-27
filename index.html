@@ -1,457 +1,1297 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Sanjeevraj Bommannan | Portfolio | ECE Student | VLSI & Embedded Systems</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- SEO -->
-  <meta name="description" content="Official portfolio of Sanjeevraj Bommannan, ECE undergraduate at Kongu Engineering College. Explore projects, technical skills, education, achievements, GitHub, LinkedIn, and contact details in VLSI, Embedded Systems, FPGA, and IoT.">
-  <meta name="keywords" content="Sanjeevraj Bommannan, Sanjeevraj portfolio, ECE student portfolio, Kongu Engineering College, projects, skills, education, GitHub, LinkedIn, VLSI Design, Embedded Systems, FPGA Development, Verilog, SystemVerilog, IoT projects">
+  <title>
+    Sanjeevraj Bommannan | VLSI Engineer | Embedded Systems Engineer | Portfolio
+  </title>
+
+  <!-- Primary SEO -->
+  <meta name="description"
+    content="Official Portfolio of Sanjeevraj Bommannan - Electronics and Communication Engineering Undergraduate specializing in VLSI Design, FPGA Development, Embedded Systems, RTL Design, Verilog, SystemVerilog and IoT Projects.">
+
+  <meta name="keywords"
+    content="Sanjeevraj Bommannan, Portfolio, VLSI Engineer, Embedded Engineer, FPGA, Verilog, SystemVerilog, RTL Design, Embedded C, ESP32, Arduino, IoT, Kongu Engineering College">
+
   <meta name="author" content="Sanjeevraj Bommannan">
-  <meta name="robots" content="index, follow">
-  <meta name="language" content="English">
-  <meta name="revisit-after" content="7 days">
+
+  <meta name="robots" content="index,follow">
+
+  <meta name="theme-color" content="#000000">
 
   <link rel="canonical" href="https://srb6.github.io/sanjeevraj-portfolio/">
 
   <!-- Open Graph -->
+
   <meta property="og:title" content="Sanjeevraj Bommannan | Portfolio">
-  <meta property="og:description" content="Portfolio of Sanjeevraj Bommannan - ECE undergraduate focused on VLSI Design, Embedded Systems, FPGA, and real-world engineering projects.">
+
+  <meta property="og:description"
+    content="Portfolio showcasing VLSI Design, FPGA, Embedded Systems, Digital Electronics and Innovative Engineering Projects.">
+
+  <meta property="og:image" content="profile.png">
+
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://srb6.github.io/sanjeevraj-portfolio/">
-  <meta property="og:image" content="https://srb6.github.io/sanjeevraj-portfolio/profile.png">
-  <meta property="og:site_name" content="Sanjeevraj Portfolio">
 
   <!-- Twitter -->
+
   <meta name="twitter:card" content="summary_large_image">
+
   <meta name="twitter:title" content="Sanjeevraj Bommannan | Portfolio">
-  <meta name="twitter:description" content="ECE undergraduate portfolio showcasing VLSI, Embedded Systems, FPGA projects, achievements, and contact details.">
-  <meta name="twitter:image" content="https://srb6.github.io/sanjeevraj-portfolio/profile.png">
 
-  <meta name="theme-color" content="#111111">
-  <link rel="icon" type="image/png" href="profile.png">
+  <meta name="twitter:description" content="VLSI | Embedded Systems | FPGA | IoT Portfolio">
 
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Sanjeevraj Bommannan",
-    "url": "https://srb6.github.io/sanjeevraj-portfolio/",
-    "image": "https://srb6.github.io/sanjeevraj-portfolio/profile.png",
-    "sameAs": [
-      "https://github.com/srb6",
-      "https://linkedin.com/in/bomman"
-    ],
-    "jobTitle": "ECE Undergraduate",
-    "alumniOf": {
-      "@type": "CollegeOrUniversity",
-      "name": "Kongu Engineering College"
-    },
-    "knowsAbout": [
-      "VLSI Design",
-      "Embedded Systems",
-      "FPGA Development",
-      "Verilog",
-      "SystemVerilog",
-      "IoT",
-      "Digital Electronics"
-    ]
-  }
-  </script>
+  <meta name="twitter:image" content="icon.png">
+
+  <link rel="icon" href="icon.png">
+
+  <!-- Google Fonts -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
+
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Remix Icons -->
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
-  <!-- Navbar -->
+  <!--==================== NAVBAR ====================-->
+
   <header class="navbar">
-    <div class="nav-container">
-      <a href="#home" class="logo">SB</a>
+
+    <div class="container nav-container">
+
+      <a href="#home" class="logo">
+
+        SB
+
+      </a>
 
       <nav>
+
         <ul class="nav-links" id="navLinks">
+
           <li><a href="#home">Home</a></li>
+
           <li><a href="#about">About</a></li>
+
           <li><a href="#skills">Skills</a></li>
+
           <li><a href="#projects">Projects</a></li>
+
           <li><a href="#achievements">Achievements</a></li>
-          <li><a href="#education">Education</a></li>
+
+          <li><a href="#certifications">Certifications</a></li>
+
+
+          <li><a href="#experience">Experience</a></li>
+
           <li><a href="#contact">Contact</a></li>
+
         </ul>
+
       </nav>
 
-      <div class="nav-actions">
-        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
-        <button class="menu-toggle" id="menuToggle">☰</button>
+      <div class="nav-right">
+
+        <button id="themeToggle">
+
+          <i class="ri-moon-line"></i>
+
+        </button>
+
+        <button id="menuToggle">
+
+          <i class="ri-menu-3-line"></i>
+
+        </button>
+
       </div>
+
     </div>
+
   </header>
 
-  <!-- Hero -->
-  <section id="home" class="hero section">
-    <div class="container hero-center">
+  <!--==================== HERO ====================-->
 
-      <div class="hero-image fade-up">
-        <div class="image-circle">
-          <img src="profile.png" alt="Sanjeevraj Bommannan">
+  <section id="home" class="hero">
+
+    <div class="container hero-container">
+
+      <div class="hero-left">
+
+        <div class="profile-ring">
+
+          <img src="profile.png" alt="Sanjeevraj">
+
         </div>
+
       </div>
 
-      <div class="hero-text fade-up">
-        <p class="hero-greeting">Hello, I'm</p>
-        <h1>Sanjeevraj Bommannan</h1>
-        <p class="hero-role">Electronics & Communication Engineering Undergraduate</p>
+      <div class="hero-right">
 
-        <p class="hero-desc">
-          Interested in <span>VLSI Design</span>, <span>Embedded Systems</span>,
-          <span>Digital Electronics</span>, <span>Verilog/SystemVerilog</span> and
-          <span>FPGA Development</span>. I enjoy building practical hardware-software systems
-          and turning ideas into working prototypes.
+        <p class="hello">
+
+          Hello, I'm
+
+        </p>
+
+        <h1>
+
+          Sanjeevraj Bommannan
+
+        </h1>
+
+        <h2 id="roleTitle">
+
+          VLSI Design Engineer
+
+        </h2>
+
+        <div class="toggle-box">
+
+          <button class="mode-btn active" id="vlsiBtn">
+
+            VLSI
+
+          </button>
+
+          <button class="mode-btn" id="embeddedBtn">
+
+            Embedded
+
+          </button>
+
+        </div>
+
+        <p id="heroDescription">
+
+          Passionate about RTL Design,
+          Verilog, SystemVerilog,
+          FPGA Development,
+          Digital Electronics,
+          and Design Verification.
+
         </p>
 
         <div class="hero-buttons">
-          <a href="#projects" class="btn btn-primary">View Projects</a>
-          <a href="#contact" class="btn btn-outline">Contact Me</a>
-          <a href="https://github.com/srb6" target="_blank" class="btn btn-outline">GitHub</a>
+
+          <a href="resume_vlsi.pdf" id="resumeButton" class="primary-btn">
+
+            <i class="ri-download-line"></i>
+
+            Download Resume
+
+          </a>
+
+          <a href="#contact" class="secondary-btn">
+
+            Hire Me
+
+          </a>
+
         </div>
+
+        <div class="social-links">
+
+          <a href="https://github.com/srb6" target="_blank">
+
+            <i class="ri-github-fill"></i>
+
+          </a>
+
+          <a href="https://linkedin.com/in/bomman" target="_blank">
+
+            <i class="ri-linkedin-box-fill"></i>
+
+          </a>
+
+          <a href="mailto:sanjeevrajbm2006@gmail.com">
+
+            <i class="ri-mail-fill"></i>
+
+          </a>
+
+          <a href="tel:+917708044151">
+
+            <i class="ri-phone-fill"></i>
+
+          </a>
+
+        </div>
+
       </div>
 
     </div>
+
+
+
   </section>
 
-  <!-- Quick Links -->
-  <section class="section quick-links-section">
-    <div class="container">
-      <div class="section-head center-head fade-up">
-        <p class="section-tag">Quick Links</p>
-        <h2>Explore My Portfolio</h2>
-      </div>
+  <!-- Continue with Part 1B -->
 
-      <div class="quick-links-grid">
-        <a href="#projects" class="quick-link-card">Projects</a>
-        <a href="#skills" class="quick-link-card">Skills</a>
-        <a href="#education" class="quick-link-card">Education</a>
-        <a href="https://github.com/srb6" target="_blank" class="quick-link-card">GitHub</a>
-        <a href="https://linkedin.com/in/bomman" target="_blank" class="quick-link-card">LinkedIn</a>
-      </div>
-    </div>
-  </section>
+  <!-- ==================== ABOUT ==================== -->
 
-  <!-- About -->
   <section id="about" class="section">
+
     <div class="container">
-      <div class="section-head fade-up center-head">
-        <p class="section-tag">About</p>
-        <h2>About Me</h2>
+
+      <div class="section-title">
+
+        <p>About Me</p>
+
+        <h2>Who I Am</h2>
+
       </div>
 
       <div class="about-grid">
-        <div class="about-card fade-up">
-          <h3>Who I Am</h3>
-          <p>
-            I am an Electronics and Communication Engineering undergraduate with strong interest in
-            <strong>VLSI Design</strong>, <strong>Embedded Systems</strong>, <strong>FPGA development</strong>,
-            and practical electronics projects. I like working on ideas that combine hardware, software,
-            sensors, and real-world problem solving.
+
+        <!-- Left -->
+
+        <div class="about-left">
+
+          <h3>
+
+            Electronics & Communication Engineering Undergraduate
+
+          </h3>
+
+          <p id="aboutDescription">
+
+            I am passionate about VLSI Design,
+            Digital Electronics,
+            FPGA Development,
+            Embedded Systems,
+            and solving real-world engineering problems.
+            I enjoy designing efficient digital circuits,
+            building embedded applications,
+            and continuously learning new technologies.
+
           </p>
+
+          <div class="about-buttons">
+
+            <a href="resume_vlsi.pdf" id="resumeButton2" class="primary-btn">
+
+              Download Resume
+
+            </a>
+
+            <a href="#projects" class="secondary-btn">
+
+              View Projects
+
+            </a>
+
+          </div>
+
         </div>
 
-        <div class="about-card fade-up">
-          <h3>My Goal</h3>
-          <p>
-            My goal is to build a strong career in <strong>VLSI Design</strong> or
-            <strong>Design Verification</strong>, while continuously improving my digital design,
-            Verilog/SystemVerilog, FPGA, and embedded system development skills.
-          </p>
+        <!-- Right -->
+
+        <div class="about-right">
+
+          <div class="info-card">
+
+            <h4>Name</h4>
+
+            <p>Sanjeevraj Bommannan M</p>
+
+          </div>
+
+          <div class="info-card">
+
+            <h4>Degree</h4>
+
+            <p>B.E Electronics & Communication Engineering</p>
+
+          </div>
+
+          <div class="info-card">
+
+            <h4>College</h4>
+
+            <p>Kongu Engineering College</p>
+
+          </div>
+
+          <div class="info-card">
+
+            <h4>Location</h4>
+
+            <p>Salem, Tamil Nadu, India</p>
+
+          </div>
+
+          <div class="info-card">
+
+            <h4>Email</h4>
+
+            <p>sanjeevrajbm2006@gmail.com</p>
+
+          </div>
+
+          <div class="info-card">
+
+            <h4>Phone</h4>
+
+            <p>+91 7708044151</p>
+
+          </div>
+
         </div>
+
       </div>
+
     </div>
+
   </section>
 
-  <!-- Skills -->
-  <section id="skills" class="section section-alt">
+  <!-- ==================== STATS ==================== -->
+
+  <section class="stats">
+
     <div class="container">
-      <div class="section-head fade-up center-head">
-        <p class="section-tag">Skills</p>
-        <h2>Technical Skills</h2>
+
+      <div class="stats-grid">
+
+        <div class="stat-card">
+
+          <h2>3+</h2>
+
+          <p>Projects Completed</p>
+
+        </div>
+
+        <div class="stat-card">
+
+          <h2>2+</h2>
+
+          <p>Technical Certifications</p>
+
+        </div>
+
+        <div class="stat-card">
+
+          <h2>8.82</h2>
+
+          <p>Current CGPA</p>
+
+        </div>
+
+        <div class="stat-card">
+
+          <h2>2</h2>
+
+          <p>Internships & Training</p>
+
+        </div>
+
       </div>
 
-      <div class="skills-grid">
-        <div class="skill-card fade-up">
-          <h3>Programming</h3>
-          <div class="chips">
-            <span>C</span>
-            <span>C++</span>
-            <span>Python</span>
-            <span>Verilog</span>
-            <span>SystemVerilog</span>
-            <span>VHDL</span>
-          </div>
-        </div>
-
-        <div class="skill-card fade-up">
-          <h3>Microcontrollers</h3>
-          <div class="chips">
-            <span>8051</span>
-            <span>ESP32</span>
-            <span>Arduino</span>
-          </div>
-        </div>
-
-        <div class="skill-card fade-up">
-          <h3>Tools</h3>
-          <div class="chips">
-            <span>Proteus</span>
-            <span>Cadence</span>
-            <span>ModelSim</span>
-            <span>QuestaSim</span>
-            <span>MATLAB</span>
-            <span>VS Code</span>
-            <span>LTSpice</span>
-          </div>
-        </div>
-
-        <div class="skill-card fade-up">
-          <h3>Areas of Interest</h3>
-          <div class="chips">
-            <span>VLSI Design</span>
-            <span>Embedded Systems</span>
-            <span>FPGA Development</span>
-            <span>Digital Electronics</span>
-          </div>
-        </div>
-      </div>
     </div>
+
   </section>
 
-  <!-- Projects -->
-  <section id="projects" class="section">
+  <!-- ==================== EDUCATION ==================== -->
+
+  <section id="education" class="section section-alt">
+
     <div class="container">
-      <div class="section-head fade-up center-head">
-        <p class="section-tag">Projects</p>
-        <h2>Projects & GitHub Work</h2>
-      </div>
 
-      <div class="project-grid">
-        <div class="project-card fade-up">
-          <div class="project-image">
-            <img src="project1.jpg" alt="Smart Energy Monitoring System">
-          </div>
-          <div class="project-body">
-            <h3>Smart Energy Monitoring System</h3>
-            <p>
-              Real-time energy monitoring and automation system using ESP32, current sensors,
-              voltage sensing, dashboard integration, relay control, and EB bill estimation.
-            </p>
-            <div class="project-tags">
-              <span>ESP32</span>
-              <span>IoT</span>
-              <span>Embedded</span>
-            </div>
-            <a href="https://github.com/srb6" target="_blank" class="project-link">Explore Project →</a>
-          </div>
-        </div>
+      <div class="section-title">
 
-        <div class="project-card fade-up">
-          <div class="project-image">
-            <img src="project2.jpg" alt="Smart Shopping Trolley">
-          </div>
-          <div class="project-body">
-            <h3>Smart Shopping Trolley</h3>
-            <p>
-              A smart retail billing system using sensors and Firebase for automated checkout,
-              anti-theft support, and mobile-based payment integration.
-            </p>
-            <div class="project-tags">
-              <span>Firebase</span>
-              <span>IoT</span>
-              <span>Automation</span>
-            </div>
-            <a href="https://github.com/srb6/Smart-Shopping-Trolley-Load-Cell-Simulation-With-Firebase" target="_blank" class="project-link">Explore Project →</a>
-          </div>
-        </div>
+        <p>Education</p>
 
-        <div class="project-card fade-up">
-          <div class="project-image">
-            <img src="project3.jpg" alt="Microplastic Detection System">
-          </div>
-          <div class="project-body">
-            <h3>Microplastic Detection System</h3>
-            <p>
-              Multi-wavelength optical sensing system using UV, Visible, and IR LEDs with
-              photodiodes to detect microplastics in water.
-            </p>
-            <div class="project-tags">
-              <span>TinyML</span>
-              <span>Sensors</span>
-              <span>Optics</span>
-            </div>
-            <a href="https://github.com/srb6" target="_blank" class="project-link">Explore Project →</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+        <h2>Academic Journey</h2>
 
-  <!-- Achievements -->
-  <section id="achievements" class="section section-alt">
-    <div class="container">
-      <div class="section-head fade-up center-head">
-        <p class="section-tag">Achievements</p>
-        <h2>Prize Winning Moments</h2>
-      </div>
-
-      <div class="achievement-grid">
-        <div class="achievement-card fade-up">
-          <img src="award1.png" alt="Ideathon Prize">
-          <div class="achievement-body">
-            <h3>Ideathon</h3>
-            <p>Second Place</p>
-          </div>
-        </div>
-
-        <div class="achievement-card fade-up">
-          <img src="award2.jpg" alt="Techno Fest Prize">
-          <div class="achievement-body">
-            <h3>Techno Fest (PoC)</h3>
-            <p>Top 3</p>
-          </div>
-        </div>
-
-        <div class="achievement-card fade-up">
-          <img src="award3.png" alt="Hackathon Prize">
-          <div class="achievement-body">
-            <h3>30 Hours Hackathon</h3>
-            <p>Second Place</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Education -->
-  <section id="education" class="section">
-    <div class="container">
-      <div class="section-head fade-up center-head">
-        <p class="section-tag">Education</p>
-        <h2>Academic Background</h2>
       </div>
 
       <div class="timeline">
-        <div class="timeline-item fade-up">
+
+        <div class="timeline-item">
+
           <div class="timeline-dot"></div>
+
           <div class="timeline-content">
-            <h3>B.E. Electronics and Communication Engineering</h3>
-            <p>Kongu Engineering College, Perundurai</p>
-            <span>2024 – Present • CGPA: 8.82</span>
+
+            <h3>
+
+              Bachelor of Engineering
+
+            </h3>
+
+            <h4>
+
+              Electronics and Communication Engineering
+
+            </h4>
+
+            <p>
+
+              Kongu Engineering College
+
+            </p>
+
+            <span>
+
+              2024 - Present
+
+            </span>
+
           </div>
+
         </div>
 
-        <div class="timeline-item fade-up">
+        <div class="timeline-item">
+
           <div class="timeline-dot"></div>
+
           <div class="timeline-content">
-            <h3>Higher Secondary Education</h3>
-            <p>Sri Sarada Balamandir Boys Matric. Hr. Sec. School, Salem</p>
-            <span>Percentage: 83.83%</span>
+
+            <h3>
+
+              Higher Secondary
+
+            </h3>
+
+            <h4>
+
+              Sri Sarada Balamandir Boys Matric Hr. Sec. School
+
+            </h4>
+
+            <p>
+
+              Percentage : 83.83%
+
+            </p>
+
           </div>
+
         </div>
+
+        <div class="timeline-item">
+
+          <div class="timeline-dot"></div>
+
+          <div class="timeline-content">
+
+            <h3>
+
+              SSLC
+
+            </h3>
+
+            <h4>
+
+              Sri Sarada Balamandir Boys Matric Hr. Sec. School
+
+            </h4>
+
+            <p>
+
+              Percentage : 84.2%
+
+            </p>
+
+          </div>
+
+        </div>
+
       </div>
+
     </div>
+
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="section section-alt">
+  <!-- ==================== CAREER OBJECTIVE ==================== -->
+
+  <section class="career">
+
     <div class="container">
-      <div class="section-head fade-up center-head">
-        <p class="section-tag">Contact</p>
-        <h2>Let's Connect</h2>
+
+      <div class="career-card">
+
+        <h2>
+
+          Career Objective
+
+        </h2>
+
+        <p id="careerObjective">
+
+          To secure an opportunity in the semiconductor industry
+          where I can contribute to VLSI Design,
+          RTL Development,
+          FPGA Implementation,
+          Digital Circuit Design,
+          and continue learning advanced technologies
+          while solving challenging engineering problems.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ==================== SKILLS PREVIEW ==================== -->
+
+  <section id="skills" class="section">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <p>Technical Skills</p>
+
+        <h2>Core Technologies</h2>
+
+      </div>
+
+      <div class="skills-preview">
+
+        <div class="skill-box">
+
+          <i class="ri-cpu-line"></i>
+
+          <h3>VLSI</h3>
+
+          <p>
+
+            RTL Design
+
+            Verilog
+
+            SystemVerilog
+
+            FPGA
+
+          </p>
+
+        </div>
+
+        <div class="skill-box">
+
+          <i class="ri-code-s-slash-line"></i>
+
+          <h3>Programming</h3>
+
+          <p>
+
+            C
+
+            Embedded C
+
+            Python
+
+            C++
+
+          </p>
+
+        </div>
+
+        <div class="skill-box">
+
+          <i class="ri-cpu-fill"></i>
+
+          <h3>Embedded</h3>
+
+          <p>
+
+            ESP32
+
+            Arduino
+
+            8051
+
+            STM32 (Learning)
+
+          </p>
+
+        </div>
+
+        <div class="skill-box">
+
+          <i class="ri-tools-line"></i>
+
+          <h3>Tools</h3>
+
+          <p>
+
+            Vivado
+
+            Cadence
+
+            ModelSim
+
+            MATLAB
+
+            Proteus
+
+            VS Code
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Continue with Part 1C -->
+
+  <!-- ===================== PROJECTS ===================== -->
+
+  <section id="projects" class="section section-alt">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <p>Projects</p>
+
+        <h2>Featured Engineering Projects</h2>
+
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+
+        <div class="project-card">
+
+          <div class="project-video">
+
+            <video autoplay muted loop playsinline>
+              <source src="images/project1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+
+          </div>
+          <div class="project-content">
+
+            <h3>Smart Energy Monitoring System</h3>
+
+            <p>
+
+              IoT-based smart energy monitoring solution using ESP32,
+              ACS712, ZMPT101B and cloud dashboard with relay automation,
+              energy analytics and bill estimation.
+
+            </p>
+
+            <div class="tech-stack">
+
+              <span>ESP32</span>
+
+              <span>IoT</span>
+
+              <span>Embedded C</span>
+
+              <span>Firebase</span>
+
+            </div>
+
+            <div class="project-buttons">
+
+              <a href="https://github.com/srb6" target="_blank" class="primary-btn">
+
+                GitHub
+
+              </a>
+
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Project 2 -->
+
+        <div class="project-card">
+
+          <img src="images/project2.png" alt="Smart Shopping Trolley">
+
+          <div class="project-content">
+
+            <h3>Smart Shopping Trolley</h3>
+
+            <p>
+
+              Smart retail automation using ESP32,
+              barcode scanning,
+              weight verification,
+              Firebase database,
+              and automated billing.
+
+            </p>
+
+            <div class="tech-stack">
+
+              <span>ESP32</span>
+
+              <span>Firebase</span>
+
+              <span>IoT</span>
+
+              <span>HX711</span>
+
+            </div>
+
+            <div class="project-buttons">
+
+              <a href="https://github.com/srb6" target="_blank" class="primary-btn">
+
+                GitHub
+
+              </a>
+
+              <a href="project2_report.pdf" class="secondary-btn">
+
+                Report
+
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Project 3 -->
+
+        <div class="project-card">
+
+          <img src="images/project3.jpeg" alt="project">
+
+          <div class="project-content">
+
+            <h3>Microplastic Detection System</h3>
+
+            <p>
+
+              Multi-wavelength optical sensing system using UV, Visible, and IR LEDs with photodiodes to detect
+              microplastics in water.
+
+            </p>
+
+            <div class="tech-stack">
+
+              <span>Sensors</span>
+
+              <span>Optics</span>
+
+
+
+            </div>
+
+            <div class="project-buttons">
+
+              <a href="https://github.com/srb6" target="_blank" class="primary-btn">
+
+                GitHub
+
+              </a>
+
+              <a href="project3_report.pdf" class="secondary-btn">
+
+                Report
+
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ===================== GITHUB ===================== -->
+
+  <section class="github-section">
+
+    <div class="container">
+
+      <div class="github-card">
+
+        <h2>
+
+          Explore My GitHub
+
+        </h2>
+
+        <p>
+
+          Browse my latest repositories,
+          including VLSI,
+          Embedded Systems,
+          FPGA,
+          IoT,
+          Python,
+          and Web Development projects.
+
+        </p>
+
+        <a href="https://github.com/srb6" target="_blank" class="primary-btn">
+
+          Visit GitHub →
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ===================== ACHIEVEMENTS ===================== -->
+
+  <section id="achievements" class="section">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <p>Achievements</p>
+
+        <h2>Awards & Recognition</h2>
+
+      </div>
+
+      <div class="achievement-grid">
+
+        <div class="achievement-card">
+
+          <img src="images/award3.png">
+
+          <h3>
+
+            30 Hours Hackathon
+
+          </h3>
+
+          <p>
+
+            Second Prize
+
+          </p>
+
+        </div>
+
+        <div class="achievement-card">
+
+          <img src="images/award1.png">
+
+          <h3>
+
+            Ideathon
+          </h3>
+
+          <p>
+
+            Second Prize
+
+          </p>
+
+        </div>
+
+        <div class="achievement-card">
+
+          <img src="images/award2.jpeg">
+
+          <h3>
+
+            Techno Fest (PoC)
+
+          </h3>
+
+          <p>
+
+            Top 3
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ===================== CERTIFICATIONS ===================== -->
+
+  <section id="certifications" class="section section-alt">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <p>Certifications</p>
+
+        <h2>Professional Learning</h2>
+
+      </div>
+
+      <div class="certificate-grid">
+
+        <div class="certificate-card">
+          <img src="images/certificate1.jpeg" alt="VHDL Programming Certificate">
+          <div class="certificate-content">
+            <h3>VHDL Programming</h3>
+            <p>RTL Design & FPGA Fundamentals</p>
+          </div>
+        </div>
+
+        <div class="certificate-card">
+          <img src="images/certification2.jpg" alt="Verilog Certificate">
+          <div class="certificate-content">
+            <h3>Verilog HDL</h3>
+            <p>Digital Circuit Design</p>
+          </div>
+        </div>
+
+        <div class="certificate-card">
+          <img src="images/certificate3.jpeg" alt="PCB Design Certificate">
+          <div class="certificate-content">
+            <h3>PCB Design</h3>
+            <p>PCB Design & Fabrication</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ===================== EXPERIENCE ===================== -->
+
+  <section id="experience" class="section">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <p>Experience</p>
+
+        <h2>Internship & Training</h2>
+
+      </div>
+
+      <div class="experience-timeline">
+
+        <div class="experience-card">
+
+          <h3>
+
+            In-Plant Training
+
+          </h3>
+
+          <h4>
+
+            Mettur Thermal Power Station (MTPS)
+
+          </h4>
+
+          <p>
+
+            Observed Electrical Maintenance,
+            Control & Instrumentation,
+            Generator,
+            Turbine,
+            and Power Plant Operations.
+
+          </p>
+
+        </div>
+
+        <div class="experience-card">
+
+          <h3>
+
+            In-Plant Training
+
+          </h3>
+
+          <h4>
+
+            Seshasayee Paper and Board Limited
+
+          </h4>
+
+          <p>
+
+            Gained hands-on exposure to electrical equipment, automation systems, and industrial processes.
+
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Continue with Part 1D -->
+  <!-- ===================== CONTACT ===================== -->
+
+  <section id="contact" class="section section-alt">
+
+    <div class="container">
+
+      <div class="section-title">
+        <p>Contact</p>
+        <h2>Let's Build Something Together</h2>
       </div>
 
       <div class="contact-wrapper">
-        <div class="contact-info fade-up">
-          <h3>Get in Touch</h3>
-          <p>
-            I’m interested in VLSI, Design Verification, Embedded Systems,
-            FPGA Development, and practical electronics projects.
-            Feel free to contact me for collaboration, internships, or project discussions.
-          </p>
 
-          <div class="contact-grid">
-            <a href="tel:+917708044151" class="contact-item">
-              <span>Phone</span>
-              <strong>+91 7708044151</strong>
-            </a>
+        <!-- Contact Information -->
 
-            <a href="mailto:sanjeevrajbm2006@gmail.com" class="contact-item">
-              <span>Email</span>
-              <strong>sanjeevrajbm2006@gmail.com</strong>
-            </a>
+        <div class="contact-info">
 
-            <a href="https://linkedin.com/in/bomman" target="_blank" class="contact-item">
-              <span>LinkedIn</span>
-              <strong>linkedin.com/in/bomman</strong>
-            </a>
+          <div class="contact-card">
 
-            <a href="https://github.com/srb6" target="_blank" class="contact-item">
-              <span>GitHub</span>
-              <strong>github.com/srb6</strong>
-            </a>
+            <i class="ri-map-pin-2-fill"></i>
+
+            <h3>Location</h3>
+
+            <p>Tamil Nadu, India</p>
+
           </div>
+
+          <div class="contact-card">
+
+            <i class="ri-mail-fill"></i>
+
+            <h3>Email</h3>
+
+            <a href="mailto:sanjeevrajbm2006@gmail.com">
+              sanjeevrajbm2006@gmail.com
+            </a>
+
+          </div>
+
+          <div class="contact-card">
+
+            <i class="ri-phone-fill"></i>
+
+            <h3>Phone</h3>
+
+            <a href="tel:+917708044151">
+              +91 7708044151
+            </a>
+
+          </div>
+
+          <div class="contact-card">
+
+            <i class="ri-github-fill"></i>
+
+            <h3>GitHub</h3>
+
+            <a href="https://github.com/srb6" target="_blank">
+              github.com/srb6
+            </a>
+
+          </div>
+
+          <div class="contact-card">
+
+            <i class="ri-linkedin-box-fill"></i>
+
+            <h3>LinkedIn</h3>
+
+            <a href="https://linkedin.com" target="_blank">
+              Visit Profile
+            </a>
+
+          </div>
+
         </div>
 
-        <div class="contact-form-card fade-up">
-          <h3>Send a Message</h3>
-          <form class="contact-form" action="https://formspree.io/f/xpqevawj" method="post">
-            <div class="form-group">
-              <input type="text" name="name" placeholder="Your Name" required>
-            </div>
+        <!-- Contact Form -->
 
-            <div class="form-group">
-              <input type="email" name="email" placeholder="Your Email" required>
-            </div>
+        <div class="contact-form">
 
-            <div class="form-group">
-              <input type="text" name="Subject" placeholder="Subject" required>
-            </div>
+          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
 
-            <div class="form-group">
-              <textarea rows="6" name="message" placeholder="Write your message..." required></textarea>
-            </div>
+            <input type="text" name="name" placeholder="Your Name" required>
 
-            <button type="submit" class="btn btn-primary">Send Message</button>
+            <input type="email" name="email" placeholder="Email Address" required>
+
+            <input type="text" name="subject" placeholder="Subject">
+
+            <textarea name="message" rows="7" placeholder="Write your message..." required></textarea>
+
+            <button type="submit" class="primary-btn">
+
+              Send Message
+
+            </button>
+
           </form>
+
         </div>
+
       </div>
+
     </div>
+
   </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-content">
-      <div>
-        <h3>Sanjeevraj Bommannan</h3>
-        <p>ECE Undergraduate • VLSI • Embedded Systems • FPGA</p>
+  <!-- ===================== FOOTER ===================== -->
+
+  <footer>
+
+    <div class="container footer-container">
+
+      <div class="footer-left">
+
+        <h2>
+
+          Sanjeevraj Bommannan
+
+        </h2>
+
+        <p>
+
+          Electronics & Communication Engineer
+
+          VLSI | Embedded Systems | FPGA
+
+        </p>
+
       </div>
 
       <div class="footer-links">
+
+        <h3>
+
+          Quick Links
+
+        </h3>
+
         <a href="#home">Home</a>
+
+        <a href="#about">About</a>
+
+        <a href="#skills">Skills</a>
+
         <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+
+        <a href="#certifications">Certifications</a>
+
+
+        <a href="#experience">Experience</a>
+
         <a href="#contact">Contact</a>
-        <a href="https://github.com/srb6" target="_blank">GitHub</a>
+
       </div>
+
+      <div class="footer-social">
+
+        <h3>
+
+          Follow Me
+
+        </h3>
+
+        <a href="https://github.com/srb6" target="_blank">
+
+          <i class="ri-github-fill"></i>
+
+        </a>
+
+        <a href="https://linkedin.com" target="_blank">
+
+          <i class="ri-linkedin-box-fill"></i>
+
+        </a>
+
+        <a href="mailto:sanjeevrajbm2006@gmail.com">
+
+          <i class="ri-mail-fill"></i>
+
+        </a>
+
+        <a href="tel:+917708044151">
+
+          <i class="ri-phone-fill"></i>
+
+        </a>
+
+      </div>
+
     </div>
 
     <div class="footer-bottom">
-      <p>© 2026 Sanjeevraj Bommannan. All Rights Reserved.</p>
+
+      <p>
+
+        © 2026 Sanjeevraj Bommannan
+
+        All Rights Reserved.
+
+        Designed & Developed by
+        Sanjeevraj Bommannan
+
+      </p>
+
     </div>
+
   </footer>
 
+  <!-- Scroll To Top -->
+
+  <button id="scrollTop">
+
+    <i class="ri-arrow-up-line"></i>
+
+  </button>
+
+  <!-- Loader -->
+
+  <div id="loader">
+
+    <div class="loader-circle"></div>
+
+  </div>
+
+  <!-- JavaScript -->
+
   <script src="script.js"></script>
+
 </body>
+
 </html>
