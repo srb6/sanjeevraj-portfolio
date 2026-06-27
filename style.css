@@ -2021,112 +2021,180 @@ grid-template-columns:repeat(2,1fr);
 
 }
 
-@media(max-width:768px){
+/* ==========================
+        MOBILE
+========================== */
 
-.nav-links{
+@media screen and (max-width:768px){
 
-position:fixed;
+.container{
+    width:92%;
+}
 
-top:82px;
+/* HERO */
 
-right:-100%;
+.hero{
 
-width:260px;
-
-height:calc(100vh - 82px);
-
-background:var(--card);
-
-display:flex;
-
-flex-direction:column;
-
-padding:40px 30px;
-
-gap:24px;
-
-transition:.35s;
-
-box-shadow:var(--shadow);
+    padding-top:120px;
+    min-height:auto;
 
 }
 
-.nav-links.active{
+.hero-container{
 
-right:0;
-
-}
-
-#menuToggle{
-
-display:block;
-
-}
-
-.hero-right h1{
-
-font-size:42px;
-
-}
-
-.hero-right h2{
-
-font-size:24px;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    gap:35px;
 
 }
 
 .profile-ring{
 
-width:230px;
-
-height:230px;
+    width:180px;
+    height:180px;
+    margin:auto;
 
 }
 
-.projects-grid,
+.hero-right h1{
 
-.skills-preview,
+    font-size:42px;
+    line-height:1.2;
 
-.achievement-grid,
+}
 
-.certificate-grid,
+.hero-right h2{
 
-.stats-grid,
+    font-size:28px;
 
-.contact-info,
+}
+
+.hero-right p{
+
+    font-size:18px;
+    width:100%;
+
+}
+
+/* BUTTONS */
+
+.hero-buttons{
+
+    flex-direction:column;
+    width:100%;
+
+}
+
+.hero-buttons a{
+
+    width:100%;
+
+}
+
+/* SOCIAL */
+
+.social-links{
+
+    justify-content:center;
+    flex-wrap:wrap;
+
+}
+
+/* ABOUT */
+
+.about-grid{
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+.about-left{
+
+    text-align:center;
+
+}
+
+.about-left h3{
+
+    font-size:34px;
+
+}
+
+.about-right{
+
+    grid-template-columns:1fr;
+
+}
+
+/* SKILLS */
+
+.skills-preview{
+
+    grid-template-columns:1fr;
+
+}
+
+/* PROJECTS */
+
+.projects-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+/* CERTIFICATES */
+
+.certificate-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+/* ACHIEVEMENTS */
+
+.achievement-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+/* EXPERIENCE */
 
 .experience-timeline{
 
-grid-template-columns:1fr;
+    grid-template-columns:1fr;
 
 }
 
-.timeline{
-
-padding-left:25px;
-
-}
-
-.timeline-dot{
-
-left:-32px;
-
-}
-
-.footer-container{
-
-gap:30px;
-
-}
+/* CONTACT */
 
 .contact-wrapper{
 
-gap:30px;
+    flex-direction:column;
+    display:flex;
+
+}
+
+.contact-info{
+
+    grid-template-columns:1fr;
+
+}
+
+/* FOOTER */
+
+.footer-container{
+
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    gap:25px;
 
 }
 
 }
-
 @media(max-width:480px){
 
 .section{
